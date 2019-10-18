@@ -18,13 +18,30 @@
 
   <div class="field">
     <%= form.label :bettor_id %>
-    <%= form.text_field :bettor_id %>
+    <%= collection_select(
+      :bet, 
+      :bettor_id,
+      Bettor.all, 
+      :id, 
+      :nickname,
+      :prompt => true
+    ) %>
   </div>
 
   <div class="field">
-    <%= form.label :game_id %>
-    <%= form.text_field :game_id %>
+  <%= form.label :game_id %>
+  <%= collection_select(
+    :bet, 
+    :game_id,
+    Game.all, 
+    :id, 
+    :date,
+    :prompt => true
+  ) %>
   </div>
+
+
+
 
   <div class="actions">
     <%= form.submit %>
