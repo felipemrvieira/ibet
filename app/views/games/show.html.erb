@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @game.date %>
+</p>
+
+<p>
+  <strong>Accumulated:</strong>
+  <%= @game.accumulated %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @game.balance %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2019-10-18 11:07:35
+  bettor: one
+  game: one
+
+two:
+  time: 2019-10-18 11:07:35
+  bettor: two
+  game: two
